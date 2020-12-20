@@ -1,0 +1,17 @@
+// Framework
+
+npm install express --save
+
+
+// Rodar servidor automatico
+
+npm install nodemon -g
+nodemon app.js
+
+// banco
+npm i sequelize --save
+// sql server
+npm i tedious
+
+// mongo db
+npm i mongoose
