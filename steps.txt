@@ -1,12 +1,16 @@
+// Typescript
+npm install --save typescript 
+tsc --init
+package ---> "start": "ts-node-dev index.ts",
+
+// Quando der pau no para executar o ts
+npm install -g ts-node-dev
+
 // Framework
 npm install express --save
 
 // JSON
 npm install ---save body-parser
-
-// Rodar servidor automatico
-npm install nodemon -g
-nodemon app.js
 
 // banco
 npm i sequelize --save
@@ -22,3 +26,7 @@ npm install --save connect-flash
 
 // Cors
 npm install --save cors
+
+// Rodar servidor automatico
+npm install nodemon -g
+nodemon app.js

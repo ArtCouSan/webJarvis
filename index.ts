@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
 // middleware
-app.use((req, res, next) => {
+app.use((req: any, res: any, next: any) => {
     // cors
     app.use(cors());
     next();
