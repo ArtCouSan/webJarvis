@@ -1,10 +1,41 @@
+1 Ambiente
+
 // Typescript
 npm install --save typescript 
 tsc --init
-package ---> "start": "ts-node-dev index.ts",
 
 // Quando der pau no para executar o ts
 npm install -g ts-node-dev
+npm install -g ts-node
+
+// Quando der pau no para executar o ts
+npm install -g ts-node-dev
+
+// EsLint
+npm install eslint --save-dev 
+npx eslint --init
+√ How would you like to use ESLint? · style       
+√ What type of modules does your project use? · esm
+√ Which framework does your project use? · none
+√ Does your project use TypeScript? · No / Yes
+√ Where does your code run? · node
+√ How would you like to define a style for your project? · guide
+√ Which style guide do you want to follow? · airbnb
+√ What format do you want your config file to be in? · JSON
+
+2 Aplicacao
+
+// Test
+npm install jest --save
+npm install ts-jest --save
+npm install --save @types/jest
+npx jest --init
+√ Would you like to use Jest when running "test" script in "package.json"? ... yes   
+√ Would you like to use Typescript for the configuration file? ... yes
+√ Choose the test environment that will be used for testing » node
+√ Do you want Jest to add coverage reports? ... yes
+√ Which provider should be used to instrument code for coverage? » v8
+√ Automatically clear mock calls and instances between every test? ... yes
 
 // Framework
 npm install express --save
@@ -12,21 +43,36 @@ npm install express --save
 // JSON
 npm install ---save body-parser
 
-// banco
+// Cors
+npm install --save cors
+
+3 BANCO
+
+// Sequelize ou TypeORM (Similiar ao JPA) (Funciona melhor com TS)
 npm i sequelize --save
-// sql server
+npm install typeorm --save
+
+// sql server - Sequelize
 npm i tedious
 
 // mongo db
 npm i mongoose
 
+4 Sessao
+
 // sessao
 npm install --save express-session
 npm install --save connect-flash
 
-// Cors
-npm install --save cors
+5 Compilar
 
-// Rodar servidor automatico
+// Rodar servidor automatico com nodemon
 npm install nodemon -g
 nodemon app.js
+
+// Rodar servidor automatico com ts-node
+package ---> "start": "ts-node-dev --respawn --transpile-only --ignore-watch node-modules index.ts",
+
+6 Build
+
+npm install @babel/cli @babel/core @babel/node @babel/preset-env @babel/preset-typescript babel-plugin-module-resolver

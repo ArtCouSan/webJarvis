@@ -1,8 +1,10 @@
-const express = require("express");
-const bodyParser = require("body-parser");
-const cors = require("cors");
-const session = require("express-session");
-const admin = require("./routes/admin");
+import express from 'express';
+import bodyParser from 'body-parser';
+import cors from 'cors';
+import session from 'express-session';
+
+import admin from './routes/admin';
+
 const app = express();
 
 // Para retornos em json
@@ -15,21 +17,21 @@ app.use(bodyParser.urlencoded({extended: false}));
 
 // middleware
 app.use((req: any, res: any, next: any) => {
-    // cors
-    app.use(cors());
-    next();
-})
+  // cors
+  app.use(cors());
+  next();
+});
 
 // Sessao
 app.use(session({
-    secret: "chave",
-    resave: true,
-    saveUninitialized: true
-}))
+  secret: 'chave',
+  resave: true,
+  saveUninitialized: true,
+}));
 
-//Exemplo rotas
+// Exemplo rotas
 app.use('/', admin);
 
 app.listen(8081, () => {
-    console.log("Servidor rodando")
-});
+  console.log('Servidor rodando');
+})
