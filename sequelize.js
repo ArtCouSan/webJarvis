@@ -4,7 +4,7 @@ const sequelize = new Sequelize(`banco`, 'user', 'senha', {
     dialect: 'verdoc'
 })
 
-// Estrutura banco
+// Model
 const Postagem = sequelize.define('tabela', {
     titulo: {
         type: Sequelize.TEXT

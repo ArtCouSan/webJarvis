@@ -1,10 +1,10 @@
 // Framework
-
 npm install express --save
 
+// JSON
+npm install ---save body-parser
 
 // Rodar servidor automatico
-
 npm install nodemon -g
 nodemon app.js
 
@@ -15,3 +15,10 @@ npm i tedious
 
 // mongo db
 npm i mongoose
+
+// sessao
+npm install --save express-session
+npm install --save connect-flash
+
+// Cors
+npm install --save cors
