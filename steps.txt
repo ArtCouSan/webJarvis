@@ -1,4 +1,5 @@
 1 Ambiente
+npm init
 
 // Typescript
 npm install --save typescript 
@@ -39,9 +40,11 @@ npx jest --init
 
 // Framework
 npm install express --save
+npm i --save-dev @types/express
 
 // JSON
 npm install ---save body-parser
+npm i --save-dev @types/body-parser
 
 // Cors
 npm install --save cors
